@@ -1,5 +1,6 @@
 use yew::prelude::*;
 
+
 #[component]
 fn App() -> Html {
     let counter = use_state(|| 0);
@@ -20,5 +21,6 @@ fn App() -> Html {
 }
 
 fn main() {
+    dotenv::dotenv().ok();
     yew::Renderer::<App>::new().render();
 }
