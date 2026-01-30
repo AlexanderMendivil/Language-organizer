@@ -1,12 +1,17 @@
 use yew::prelude::*;
 
+mod components;
+use components::{layout::Layout};
+
 #[component]
 fn App() -> Html {
 
     html! {
-        <div class={classes!("app-layout")}> 
-        </div>
-    }
+        <Layout>
+            <h1>{"hello"}</h1>
+            <h2>{"second"}</h2>
+        </Layout>
+           }
 }
 
 fn main() {
